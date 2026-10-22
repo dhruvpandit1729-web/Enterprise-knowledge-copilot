@@ -1,0 +1,173 @@
+{
+  "dataset_version": "1.0-heldout",
+  "total_examples": 4,
+  "mean_retrieval_recall": 1.0,
+  "mean_citation_validity": 1.0,
+  "mean_answerability_accuracy": 1.0,
+  "mean_key_fact_coverage": 1.0,
+  "mean_claim_support": 0.8333333333333334,
+  "claim_support_applicable_count": 3,
+  "claim_support_na_count": 1,
+  "diagnostics": [
+    {
+      "example_id": "heldout_001",
+      "question": "Are employees allowed to push API keys to GitHub or GitLab?",
+      "expected_answerable": true,
+      "retrieved_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "matched_sources": [
+        "company_policy.md"
+      ],
+      "missing_sources": [],
+      "expected_sources": [
+        "company_policy.md"
+      ],
+      "answer_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "valid_citations": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "invalid_citations": [],
+      "expected_facts": [
+        "source control",
+        "never"
+      ],
+      "matched_facts": [
+        "source control",
+        "never"
+      ],
+      "missed_facts": [],
+      "answer_text": "No, employees are not allowed to push API keys to GitHub or GitLab. According to the company policy, access credentials and API keys must never be committed to source control or shared over unsecured communication channels [Source: company_policy.md, Page: N/A].",
+      "is_abstaining": false,
+      "answerability_correct": true,
+      "retrieval_recall": 1.0,
+      "citation_validity": 1.0,
+      "key_fact_coverage": 1.0,
+      "claim_support_score": 1.0,
+      "claim_support_applicable": true,
+      "failure_reasons": []
+    },
+    {
+      "example_id": "heldout_002",
+      "question": "Can an employee get a hardware purchase of $400 reimbursed?",
+      "expected_answerable": true,
+      "retrieved_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "matched_sources": [
+        "company_policy.md"
+      ],
+      "missing_sources": [],
+      "expected_sources": [
+        "company_policy.md"
+      ],
+      "answer_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "valid_citations": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "invalid_citations": [],
+      "expected_facts": [
+        "reimbursable",
+        "500"
+      ],
+      "matched_facts": [
+        "reimbursable",
+        "500"
+      ],
+      "missed_facts": [],
+      "answer_text": "Yes, an employee can get a hardware purchase of $400 reimbursed. The policy states that standard business hardware expenses up to $500 per month are fully reimbursable, provided original receipts are submitted within 30 days of purchase [Source: company_policy.md, Page: N/A].",
+      "is_abstaining": false,
+      "answerability_correct": true,
+      "retrieval_recall": 1.0,
+      "citation_validity": 1.0,
+      "key_fact_coverage": 1.0,
+      "claim_support_score": 0.5,
+      "claim_support_applicable": true,
+      "failure_reasons": []
+    },
+    {
+      "example_id": "heldout_003",
+      "question": "Where are project dependencies pinned according to the engineering guidelines?",
+      "expected_answerable": true,
+      "retrieved_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "matched_sources": [
+        "engineering_guide.md"
+      ],
+      "missing_sources": [],
+      "expected_sources": [
+        "engineering_guide.md"
+      ],
+      "answer_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "valid_citations": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "invalid_citations": [],
+      "expected_facts": [
+        "requirements.txt"
+      ],
+      "matched_facts": [
+        "requirements.txt"
+      ],
+      "missed_facts": [],
+      "answer_text": "According to the engineering guidelines, project dependencies are pinned in requirements.txt. [Source: engineering_guide.md, Page: N/A]",
+      "is_abstaining": false,
+      "answerability_correct": true,
+      "retrieval_recall": 1.0,
+      "citation_validity": 1.0,
+      "key_fact_coverage": 1.0,
+      "claim_support_score": 1.0,
+      "claim_support_applicable": true,
+      "failure_reasons": []
+    },
+    {
+      "example_id": "heldout_004",
+      "question": "What is the policy for parental leave and childcare assistance?",
+      "expected_answerable": false,
+      "retrieved_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "matched_sources": [],
+      "missing_sources": [],
+      "expected_sources": [],
+      "answer_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "valid_citations": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "invalid_citations": [],
+      "expected_facts": [],
+      "matched_facts": [],
+      "missed_facts": [],
+      "answer_text": "The provided context does not contain information regarding parental leave or childcare assistance policies. Therefore, the documents do not provide enough information to answer the question.",
+      "is_abstaining": true,
+      "answerability_correct": true,
+      "retrieval_recall": 1.0,
+      "citation_validity": 1.0,
+      "key_fact_coverage": 1.0,
+      "claim_support_score": null,
+      "claim_support_applicable": false,
+      "failure_reasons": []
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "dataset_version": "1.0-heldout",
+  "description": "Held-out test set for evaluating RAG pipeline generalization.",
+  "examples": [
+    {
+      "id": "heldout_001",
+      "question": "Are employees allowed to push API keys to GitHub or GitLab?",
+      "expected_answerable": true,
+      "expected_sources": ["company_policy.md"],
+      "expected_facts": [
+        "source control",
+        "never"
+      ]
+    },
+    {
+      "id": "heldout_002",
+      "question": "Can an employee get a hardware purchase of $400 reimbursed?",
+      "expected_answerable": true,
+      "expected_sources": ["company_policy.md"],
+      "expected_facts": [
+        "reimbursable",
+        "500"
+      ]
+    },
+    {
+      "id": "heldout_003",
+      "question": "Where are project dependencies pinned according to the engineering guidelines?",
+      "expected_answerable": true,
+      "expected_sources": ["engineering_guide.md"],
+      "expected_facts": [
+        "requirements.txt"
+      ]
+    },
+    {
+      "id": "heldout_004",
+      "question": "What is the policy for parental leave and childcare assistance?",
+      "expected_answerable": false,
+      "expected_sources": [],
+      "expected_facts": []
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "dataset_version": "1.2",
+  "description": "Robustness evaluation suite for Enterprise Knowledge Copilot across multiple organizational documents.",
+  "examples": [
+    {
+      "id": "eval_001",
+      "question": "What is the remote work policy?",
+      "expected_answerable": true,
+      "expected_sources": ["company_policy.md"],
+      "expected_facts": [
+        "two days per week",
+        "manager approval",
+        "core working hours",
+        "10:00 AM",
+        "4:00 PM"
+      ]
+    },
+    {
+      "id": "eval_002",
+      "question": "What is the maximum monthly expense reimbursement for travel and hardware?",
+      "expected_answerable": true,
+      "expected_sources": ["company_policy.md"],
+      "expected_facts": [
+        "500",
+        "monthly",
+        "original receipts",
+        "30 days"
+      ]
+    },
+    {
+      "id": "eval_003",
+      "question": "What are the security guidelines regarding API keys and credentials?",
+      "expected_answerable": true,
+      "expected_sources": ["company_policy.md"],
+      "expected_facts": [
+        "source control",
+        "unsecured communication channels"
+      ]
+    },
+    {
+      "id": "eval_004",
+      "question": "How many days can an employee work from home each week according to the guidelines?",
+      "expected_answerable": true,
+      "expected_sources": ["company_policy.md"],
+      "expected_facts": [
+        "up to two days per week",
+        "manager approval"
+      ]
+    },
+    {
+      "id": "eval_005",
+      "question": "Within how many days must expense receipts be submitted for reimbursement?",
+      "expected_answerable": true,
+      "expected_sources": ["company_policy.md"],
+      "expected_facts": [
+        "30 days"
+      ]
+    },
+    {
+      "id": "eval_006",
+      "question": "What architecture does Enterprise Knowledge Copilot use?",
+      "expected_answerable": true,
+      "expected_sources": ["engineering_guide.md"],
+      "expected_facts": [
+        "retrieval-augmented generation",
+        "modular"
+      ]
+    },
+    {
+      "id": "eval_007",
+      "question": "Which distance metric is used in ChromaDB for indexing embeddings?",
+      "expected_answerable": true,
+      "expected_sources": ["engineering_guide.md"],
+      "expected_facts": [
+        "cosine"
+      ]
+    },
+    {
+      "id": "eval_008",
+      "question": "Which Python version and test framework are required by the engineering standards?",
+      "expected_answerable": true,
+      "expected_sources": ["engineering_guide.md"],
+      "expected_facts": [
+        "3.13.5",
+        "pytest"
+      ]
+    },
+    {
+      "id": "eval_009",
+      "question": "What plugin is required for testing asynchronous methods in the codebase?",
+      "expected_answerable": true,
+      "expected_sources": ["engineering_guide.md"],
+      "expected_facts": [
+        "pytest-asyncio"
+      ]
+    },
+    {
+      "id": "eval_010",
+      "question": "What file formats does the document ingestion system support?",
+      "expected_answerable": true,
+      "expected_sources": ["engineering_guide.md"],
+      "expected_facts": [
+        "pdf",
+        "docx",
+        "txt",
+        "markdown"
+      ]
+    },
+    {
+      "id": "eval_011",
+      "question": "What is the company stock price and quarterly revenue?",
+      "expected_answerable": false,
+      "expected_sources": [],
+      "expected_facts": []
+    },
+    {
+      "id": "eval_012",
+      "question": "What is the health insurance and dental plan coverage?",
+      "expected_answerable": false,
+      "expected_sources": [],
+      "expected_facts": []
+    },
+    {
+      "id": "eval_013",
+      "question": "What is the official procedure for booking vacation days and PTO?",
+      "expected_answerable": false,
+      "expected_sources": [],
+      "expected_facts": []
+    },
+    {
+      "id": "eval_014",
+      "question": "Who is the Chief Technology Officer of the company?",
+      "expected_answerable": false,
+      "expected_sources": [],
+      "expected_facts": []
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+﻿fastapi==0.149.0
+uvicorn[standard]==0.54.0
+streamlit==1.66.0
+pydantic==2.14.1
+chromadb==1.5.9
+sentence-transformers==6.1.0
+transformers==5.20.2
+tokenizers==0.23.3
+torch==2.14.1
+pypdf==6.21.1
+python-docx==1.2.0
+rank-bm25==0.2.2
+nltk==3.10.3
+python-dotenv==1.2.4
+python-multipart==0.0.32
+pytest==9.1.1
+httpx==0.28.1

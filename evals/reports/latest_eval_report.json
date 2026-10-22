@@ -1,0 +1,586 @@
+{
+  "dataset_version": "1.2",
+  "total_examples": 14,
+  "mean_retrieval_recall": 1.0,
+  "mean_citation_validity": 1.0,
+  "mean_answerability_accuracy": 1.0,
+  "mean_key_fact_coverage": 0.9642857142857143,
+  "mean_claim_support": 1.0,
+  "claim_support_applicable_count": 10,
+  "claim_support_na_count": 4,
+  "diagnostics": [
+    {
+      "example_id": "eval_001",
+      "question": "What is the remote work policy?",
+      "expected_answerable": true,
+      "retrieved_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "matched_sources": [
+        "company_policy.md"
+      ],
+      "missing_sources": [],
+      "expected_sources": [
+        "company_policy.md"
+      ],
+      "answer_sources": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "valid_citations": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "invalid_citations": [],
+      "expected_facts": [
+        "two days per week",
+        "manager approval",
+        "core working hours",
+        "10:00 AM",
+        "4:00 PM"
+      ],
+      "matched_facts": [
+        "two days per week",
+        "manager approval",
+        "core working hours",
+        "10:00 AM",
+        "4:00 PM"
+      ],
+      "missed_facts": [],
+      "answer_text": "Employees are permitted to work remotely up to two days per week with prior manager approval. All remote work arrangements must maintain core working hours between 10:00 AM and 4:00 PM local time. [Source: company_policy.md, Page: N/A]",
+      "is_abstaining": false,
+      "answerability_correct": true,
+      "retrieval_recall": 1.0,
+      "citation_validity": 1.0,
+      "key_fact_coverage": 1.0,
+      "claim_support_score": 1.0,
+      "claim_support_applicable": true,
+      "failure_reasons": []
+    },
+    {
+      "example_id": "eval_002",
+      "question": "What is the maximum monthly expense reimbursement for travel and hardware?",
+      "expected_answerable": true,
+      "retrieved_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "matched_sources": [
+        "company_policy.md"
+      ],
+      "missing_sources": [],
+      "expected_sources": [
+        "company_policy.md"
+      ],
+      "answer_sources": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "valid_citations": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "invalid_citations": [],
+      "expected_facts": [
+        "500",
+        "monthly",
+        "original receipts",
+        "30 days"
+      ],
+      "matched_facts": [
+        "500",
+        "monthly",
+        "original receipts",
+        "30 days"
+      ],
+      "missed_facts": [],
+      "answer_text": "The maximum monthly expense reimbursement for standard business travel and hardware expenses is $500, provided original receipts are submitted within 30 days of purchase.\n\n[Source: company_policy.md, Page: N/A]",
+      "is_abstaining": false,
+      "answerability_correct": true,
+      "retrieval_recall": 1.0,
+      "citation_validity": 1.0,
+      "key_fact_coverage": 1.0,
+      "claim_support_score": 1.0,
+      "claim_support_applicable": true,
+      "failure_reasons": []
+    },
+    {
+      "example_id": "eval_003",
+      "question": "What are the security guidelines regarding API keys and credentials?",
+      "expected_answerable": true,
+      "retrieved_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "matched_sources": [
+        "company_policy.md"
+      ],
+      "missing_sources": [],
+      "expected_sources": [
+        "company_policy.md"
+      ],
+      "answer_sources": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "valid_citations": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "invalid_citations": [],
+      "expected_facts": [
+        "source control",
+        "unsecured communication channels"
+      ],
+      "matched_facts": [
+        "source control",
+        "unsecured communication channels"
+      ],
+      "missed_facts": [],
+      "answer_text": "Access credentials and API keys must never be committed to source control or shared over unsecured communication channels. [Source: company_policy.md, Page: N/A]",
+      "is_abstaining": false,
+      "answerability_correct": true,
+      "retrieval_recall": 1.0,
+      "citation_validity": 1.0,
+      "key_fact_coverage": 1.0,
+      "claim_support_score": 1.0,
+      "claim_support_applicable": true,
+      "failure_reasons": []
+    },
+    {
+      "example_id": "eval_004",
+      "question": "How many days can an employee work from home each week according to the guidelines?",
+      "expected_answerable": true,
+      "retrieved_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "matched_sources": [
+        "company_policy.md"
+      ],
+      "missing_sources": [],
+      "expected_sources": [
+        "company_policy.md"
+      ],
+      "answer_sources": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "valid_citations": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "invalid_citations": [],
+      "expected_facts": [
+        "up to two days per week",
+        "manager approval"
+      ],
+      "matched_facts": [
+        "up to two days per week"
+      ],
+      "missed_facts": [
+        "manager approval"
+      ],
+      "answer_text": "An employee can work remotely up to two days per week according to the guidelines. [Source: company_policy.md, Page: N/A]",
+      "is_abstaining": false,
+      "answerability_correct": true,
+      "retrieval_recall": 1.0,
+      "citation_validity": 1.0,
+      "key_fact_coverage": 0.5,
+      "claim_support_score": 1.0,
+      "claim_support_applicable": true,
+      "failure_reasons": [
+        "Missing key facts: ['manager approval']"
+      ]
+    },
+    {
+      "example_id": "eval_005",
+      "question": "Within how many days must expense receipts be submitted for reimbursement?",
+      "expected_answerable": true,
+      "retrieved_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "matched_sources": [
+        "company_policy.md"
+      ],
+      "missing_sources": [],
+      "expected_sources": [
+        "company_policy.md"
+      ],
+      "answer_sources": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "valid_citations": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "invalid_citations": [],
+      "expected_facts": [
+        "30 days"
+      ],
+      "matched_facts": [
+        "30 days"
+      ],
+      "missed_facts": [],
+      "answer_text": "Expense receipts must be submitted within 30 days of purchase. [Source: company_policy.md, Page: N/A]",
+      "is_abstaining": false,
+      "answerability_correct": true,
+      "retrieval_recall": 1.0,
+      "citation_validity": 1.0,
+      "key_fact_coverage": 1.0,
+      "claim_support_score": 1.0,
+      "claim_support_applicable": true,
+      "failure_reasons": []
+    },
+    {
+      "example_id": "eval_006",
+      "question": "What architecture does Enterprise Knowledge Copilot use?",
+      "expected_answerable": true,
+      "retrieved_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "matched_sources": [
+        "engineering_guide.md"
+      ],
+      "missing_sources": [],
+      "expected_sources": [
+        "engineering_guide.md"
+      ],
+      "answer_sources": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "valid_citations": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "invalid_citations": [],
+      "expected_facts": [
+        "retrieval-augmented generation",
+        "modular"
+      ],
+      "matched_facts": [
+        "retrieval-augmented generation",
+        "modular"
+      ],
+      "missed_facts": [],
+      "answer_text": "The Enterprise Knowledge Copilot uses a modular Retrieval-Augmented Generation (RAG) architecture. Document ingestion parses PDFs, DOCX, TXT, and Markdown files into structured chunks, which are then converted into dense vector embeddings using sentence-transformers and indexed in ChromaDB with cosine distance metric.\n\n[Source: engineering_guide.md, Page: N/A]",
+      "is_abstaining": false,
+      "answerability_correct": true,
+      "retrieval_recall": 1.0,
+      "citation_validity": 1.0,
+      "key_fact_coverage": 1.0,
+      "claim_support_score": 1.0,
+      "claim_support_applicable": true,
+      "failure_reasons": []
+    },
+    {
+      "example_id": "eval_007",
+      "question": "Which distance metric is used in ChromaDB for indexing embeddings?",
+      "expected_answerable": true,
+      "retrieved_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "matched_sources": [
+        "engineering_guide.md"
+      ],
+      "missing_sources": [],
+      "expected_sources": [
+        "engineering_guide.md"
+      ],
+      "answer_sources": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "valid_citations": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "invalid_citations": [],
+      "expected_facts": [
+        "cosine"
+      ],
+      "matched_facts": [
+        "cosine"
+      ],
+      "missed_facts": [],
+      "answer_text": "The distance metric used in ChromaDB for indexing embeddings is cosine distance. `[Source: engineering_guide.md, Page: N/A]`",
+      "is_abstaining": false,
+      "answerability_correct": true,
+      "retrieval_recall": 1.0,
+      "citation_validity": 1.0,
+      "key_fact_coverage": 1.0,
+      "claim_support_score": 1.0,
+      "claim_support_applicable": true,
+      "failure_reasons": []
+    },
+    {
+      "example_id": "eval_008",
+      "question": "Which Python version and test framework are required by the engineering standards?",
+      "expected_answerable": true,
+      "retrieved_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "matched_sources": [
+        "engineering_guide.md"
+      ],
+      "missing_sources": [],
+      "expected_sources": [
+        "engineering_guide.md"
+      ],
+      "answer_sources": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "valid_citations": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "invalid_citations": [],
+      "expected_facts": [
+        "3.13.5",
+        "pytest"
+      ],
+      "matched_facts": [
+        "3.13.5",
+        "pytest"
+      ],
+      "missed_facts": [],
+      "answer_text": "The engineering standards require the use of Python 3.13.5 and the test automation should be executed using pytest.\n\n[Source: engineering_guide.md, Page: N/A]",
+      "is_abstaining": false,
+      "answerability_correct": true,
+      "retrieval_recall": 1.0,
+      "citation_validity": 1.0,
+      "key_fact_coverage": 1.0,
+      "claim_support_score": 1.0,
+      "claim_support_applicable": true,
+      "failure_reasons": []
+    },
+    {
+      "example_id": "eval_009",
+      "question": "What plugin is required for testing asynchronous methods in the codebase?",
+      "expected_answerable": true,
+      "retrieved_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "matched_sources": [
+        "engineering_guide.md"
+      ],
+      "missing_sources": [],
+      "expected_sources": [
+        "engineering_guide.md"
+      ],
+      "answer_sources": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "valid_citations": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "invalid_citations": [],
+      "expected_facts": [
+        "pytest-asyncio"
+      ],
+      "matched_facts": [
+        "pytest-asyncio"
+      ],
+      "missed_facts": [],
+      "answer_text": "The required plugin for testing asynchronous methods in the codebase is pytest-asyncio. [Source: engineering_guide.md, Page: N/A]",
+      "is_abstaining": false,
+      "answerability_correct": true,
+      "retrieval_recall": 1.0,
+      "citation_validity": 1.0,
+      "key_fact_coverage": 1.0,
+      "claim_support_score": 1.0,
+      "claim_support_applicable": true,
+      "failure_reasons": []
+    },
+    {
+      "example_id": "eval_010",
+      "question": "What file formats does the document ingestion system support?",
+      "expected_answerable": true,
+      "retrieved_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "matched_sources": [
+        "engineering_guide.md"
+      ],
+      "missing_sources": [],
+      "expected_sources": [
+        "engineering_guide.md"
+      ],
+      "answer_sources": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "valid_citations": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "invalid_citations": [],
+      "expected_facts": [
+        "pdf",
+        "docx",
+        "txt",
+        "markdown"
+      ],
+      "matched_facts": [
+        "pdf",
+        "docx",
+        "txt",
+        "markdown"
+      ],
+      "missed_facts": [],
+      "answer_text": "The document ingestion system supports PDFs, DOCX, TXT, and Markdown files. [Source: engineering_guide.md, Page: N/A]",
+      "is_abstaining": false,
+      "answerability_correct": true,
+      "retrieval_recall": 1.0,
+      "citation_validity": 1.0,
+      "key_fact_coverage": 1.0,
+      "claim_support_score": 1.0,
+      "claim_support_applicable": true,
+      "failure_reasons": []
+    },
+    {
+      "example_id": "eval_011",
+      "question": "What is the company stock price and quarterly revenue?",
+      "expected_answerable": false,
+      "retrieved_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "matched_sources": [],
+      "missing_sources": [],
+      "expected_sources": [],
+      "answer_sources": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "valid_citations": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "invalid_citations": [],
+      "expected_facts": [],
+      "matched_facts": [],
+      "missed_facts": [],
+      "answer_text": "The available documents do not provide information on the company stock price or quarterly revenue.",
+      "is_abstaining": true,
+      "answerability_correct": true,
+      "retrieval_recall": 1.0,
+      "citation_validity": 1.0,
+      "key_fact_coverage": 1.0,
+      "claim_support_score": null,
+      "claim_support_applicable": false,
+      "failure_reasons": []
+    },
+    {
+      "example_id": "eval_012",
+      "question": "What is the health insurance and dental plan coverage?",
+      "expected_answerable": false,
+      "retrieved_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "matched_sources": [],
+      "missing_sources": [],
+      "expected_sources": [],
+      "answer_sources": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "valid_citations": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "invalid_citations": [],
+      "expected_facts": [],
+      "matched_facts": [],
+      "missed_facts": [],
+      "answer_text": "The provided context does not contain any information about health insurance or dental plan coverage. Therefore, I cannot answer the question based on the given documents.\n\n[Source: company_policy.md, Page: N/A]\n[Source: engineering_guide.md, Page: N/A]",
+      "is_abstaining": true,
+      "answerability_correct": true,
+      "retrieval_recall": 1.0,
+      "citation_validity": 1.0,
+      "key_fact_coverage": 1.0,
+      "claim_support_score": null,
+      "claim_support_applicable": false,
+      "failure_reasons": []
+    },
+    {
+      "example_id": "eval_013",
+      "question": "What is the official procedure for booking vacation days and PTO?",
+      "expected_answerable": false,
+      "retrieved_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "matched_sources": [],
+      "missing_sources": [],
+      "expected_sources": [],
+      "answer_sources": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "valid_citations": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "invalid_citations": [],
+      "expected_facts": [],
+      "matched_facts": [],
+      "missed_facts": [],
+      "answer_text": "The available documents do not provide information on the official procedure for booking vacation days and PTO.",
+      "is_abstaining": true,
+      "answerability_correct": true,
+      "retrieval_recall": 1.0,
+      "citation_validity": 1.0,
+      "key_fact_coverage": 1.0,
+      "claim_support_score": null,
+      "claim_support_applicable": false,
+      "failure_reasons": []
+    },
+    {
+      "example_id": "eval_014",
+      "question": "Who is the Chief Technology Officer of the company?",
+      "expected_answerable": false,
+      "retrieved_sources": [
+        "company_policy.md",
+        "engineering_guide.md"
+      ],
+      "matched_sources": [],
+      "missing_sources": [],
+      "expected_sources": [],
+      "answer_sources": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "valid_citations": [
+        "engineering_guide.md",
+        "company_policy.md"
+      ],
+      "invalid_citations": [],
+      "expected_facts": [],
+      "matched_facts": [],
+      "missed_facts": [],
+      "answer_text": "The available documents do not provide information about the Chief Technology Officer of the company.",
+      "is_abstaining": true,
+      "answerability_correct": true,
+      "retrieval_recall": 1.0,
+      "citation_validity": 1.0,
+      "key_fact_coverage": 1.0,
+      "claim_support_score": null,
+      "claim_support_applicable": false,
+      "failure_reasons": []
+    }
+  ]
+}
