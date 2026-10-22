@@ -154,16 +154,16 @@ Verify the end-to-end flow with a running Ollama instance:
 
 The main workspace for uploading documents and asking questions.
 
-![Knowledge Copilot Interface](docs/screenshots/RAG Application Interface.png)
+![Knowledge Copilot Interface](docs/screenshots/knowledge-copilot-ui.png)
 
 ### 2. Grounded Answers and Citations
 
 Answers include source references to help users verify the retrieved evidence.
 
-![Answer with Citations](docs/screenshots/Answer And Citation.png)
+![Answer with Citations](docs/screenshots/answer-with-citations.png)
 
 ### 3. FastAPI Documentation
 
 Interactive API documentation for the health, document upload, and question-answering endpoints.
 
-![FastAPI Documentation](docs/screenshots/API Documentaion.png)
+![FastAPI Documentation](docs/screenshots/api-docs.png)
