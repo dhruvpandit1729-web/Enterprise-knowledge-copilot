@@ -5,9 +5,9 @@ A professional, locally runnable, evidence-grounded Retrieval-Augmented Generati
 ## 🚀 Key Features
 
 - **Multi-Format Ingestion**: Native support for PDF, DOCX, TXT, and Markdown files.
-- **Persistent Knowledge Base**: Uses ChromaDB for high-performance semantic storage and retrieval.
-- **Evidence-Grounded QA**: Answers are generated based strictly on retrieved context, preventing hallucinations.
-- **Verifiable Citations**: Every answer includes structured source metadata, including filenames, page numbers, and section headings.
+- **Persistent Knowledge Base**: Uses ChromaDB for persistent vector storage and semantic retrieval across indexed document chunks.
+- **Evidence-Grounded QA**: Uses retrieved document context to ground generated answers. This helps reduce unsupported responses, but does not guarantee that every answer is correct.
+- **Verifiable Citations**: Returns source metadata when available, including filenames, page numbers, and section headings, helping users inspect the evidence behind an answer.
 - **Smart Abstention**: The system explicitly abstains from answering when the retrieved evidence is insufficient to provide a grounded response.
 - **Modern API & UI**: A thin FastAPI backend paired with a clean React 19 + Vite frontend.
 
@@ -142,9 +142,28 @@ Verify the end-to-end flow with a running Ollama instance:
 ```
 
 ## ⚠️ Known Limitations
-- **Retrieval Ranking**: The system uses pure semantic search. In some cases, the most relevant chunk may rank slightly lower (e.g., #3 or #4) than irrelevant chunks that share more keywords. This is mitigated by using a retrieval limit $\ge 5$.
+- **Retrieval Ranking**: The current system uses semantic search, and the most relevant chunk may not always rank first. In our PDF test, the correct page was retrieved within the top five results, but ranking quality remains an area for improvement.
 
 ## 🛠 Troubleshooting
 - **CORS Errors**: Ensure the backend is started via `app/main.py` to enable the configured `CORSMiddleware`.
 - **Ollama Connection**: Verify Ollama is running by visiting `http://localhost:11434`.
 - **File Permissions**: On Windows, if `shutil.rmtree` fails during tests, ensure no other process (like an open file explorer) is locking the `temp_chroma_db` folder.
+## Screenshots
+
+### 1. Knowledge Copilot Interface
+
+The main workspace for uploading documents and asking questions.
+
+![Knowledge Copilot Interface](docs/screenshots/RAG Application Interface.png)
+
+### 2. Grounded Answers and Citations
+
+Answers include source references to help users verify the retrieved evidence.
+
+![Answer with Citations](docs/screenshots/Answer And Citation.png)
+
+### 3. FastAPI Documentation
+
+Interactive API documentation for the health, document upload, and question-answering endpoints.
+
+![FastAPI Documentation](docs/screenshots/API Documentaion.png)
